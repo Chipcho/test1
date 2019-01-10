@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Logout{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+			<div class="navbar-header">
+			<a class="navbar-brand" href="http://www.itdiffer.com"><img src="{% static '/images/mmi.jpg' %}" width="100px"></a>
+		</div>
+	<p>You have log out</p>
+
+	<p>You can <a href="{% url 'account:user_login' %}">Login</a> again </p>
+</div>
+{% endblock %}
